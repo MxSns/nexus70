@@ -199,8 +199,6 @@ h1, h2 {
         font-size: 0.8em;
         justify-content: center;
     }
-
-    
 }
 /* container three */
 figcaption {
@@ -254,10 +252,10 @@ label {
 
 /* footer */
 footer {
-    margin-top: 400px;
+    margin-top: 100px;
+    background-color: #000000;
 }
 .footer-list {
-    
     height: 120px;
     bottom: 0;
     left: 0;
@@ -282,6 +280,10 @@ footer {
     border-radius: 10px;
     box-shadow: 0px 0px 4px 3px  orangered;
 }
+.mentions {
+    text-align: center;
+    color:#4f4f4f;
+}
 /* media queries for color scheme */
 @media (prefers-color-scheme: light) {
     body {
@@ -291,15 +293,13 @@ footer {
     .intro-logo {
         color: rgb(17, 17, 17);
     }
-    h1 {
+    h1,
+    h2,
+    .container-text p,
+    .container_text {
         color:rgb(17, 17, 17);
     }
-    .container-text p {
-        color: rgb(17, 17, 17);
-    }
-    .container_text {
-        color: rgb(17, 17, 17);
-    }
+    
     label {
         color: rgb(17, 17, 17);
     }
