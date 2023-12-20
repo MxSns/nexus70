@@ -18,7 +18,8 @@ body {
 }
 /* navbar */
 .navbar {
-    font-size: 1.2em;
+    min-height: 60px;
+    font-size: 2.2em;
     padding-left: 25px;
     position: sticky;
     top: 0;
@@ -26,6 +27,8 @@ body {
 }
 .navbar-brand {
     font-family: 'Fjalla One', sans-serif;
+    font-size: 1.4em;
+    color: beige;
 }
 
 .first-intro {
@@ -40,10 +43,10 @@ body {
     margin-right: 30px;
     left: 100px;
     opacity: 0;
-    font-size: 1.6em;
+    font-size: 2em;
     font-family: 'Fjalla One', sans-serif;
     
-    color: orangered;
+    color: #ff4500;
    
 }
 .first-intro .decouvrir {
@@ -80,6 +83,7 @@ h1, h2 {
     text-align: center;
     color:beige;
     margin: 50px auto;
+    font-size: 3em;
 }
 
 
@@ -161,7 +165,7 @@ h1, h2 {
 }
 .container-text p {
     color: beige;
-    font-size: 1.6em;
+    font-size: 2em;
     margin: 100px auto;
     letter-spacing: 1px;
 }
@@ -170,7 +174,7 @@ h1, h2 {
     text-align: space-around;
     margin: auto 4%;
     color: beige;
-    font-size: 1.6em;
+    font-size: 2em;
 }
 .container_text img {
     width: 92vw;
@@ -183,21 +187,37 @@ h1, h2 {
     flex-direction: row;
     justify-content: space-around;
 }
+#section1,
+#section2,
+#section3,
+#section4 {
+    transition: opacity ease-in-out 0.5s;
+}
 /* media queries for the containers */
 @media screen and (min-width: 1020px) {
+    .navbar {
+        font-size: 1.3em;
+    }
+    .container-text {
+        font-size: 0.8em;
+    }
     .container_text {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        font-size: 1.2em;
         gap: 100px;
     }
     .container_text img {
         width: 40vw;
     }
     .container_text p {
-        font-size: 0.8em;
+        font-size: 1.2em;
         justify-content: center;
+    }
+    .figcaption {
+        font-size: 1.8em;
     }
 }
 /* container three */
@@ -315,5 +335,8 @@ footer {
         background-color: rgb(240, 240, 240);
         border: 2px solid #000;
         border-radius: 5px;
+    }
+    #submitMessage {
+        color:rgb(17, 17, 17);
     }
 }

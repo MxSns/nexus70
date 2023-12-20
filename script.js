@@ -7,6 +7,7 @@ $(function(){
 });
 
 
+/* function for returning a message at the form submission */
 function getName(){
     var name = document.getElementById('name').value;
     document.querySelector(".response").innerHTML = "Thank you " + name + ", I'll get back to you as soon as possible!";
